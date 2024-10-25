@@ -1,0 +1,290 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.ibb.co/PWtTKdK/king.jpg",
+    "review": "A timeless classic that tackles the issues of racism and morality. Set in the American South during the 1930s, the novel follows the journey of young Scout Finch as she learns about compassion and justice. The character of Atticus Finch, Scout's father, serves as a moral compass in the face of prejudice and injustice. Lee's masterful storytelling and vivid characters bring the town of Maycomb to life, making it a quintessential read for generations. With its poignant themes and powerful narrative, To Kill a Mockingbird continues to resonate with readers worldwide. The book's exploration of empathy and understanding remains as relevant today as it was upon its publication.",
+    "totalPages": 281,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": [
+      "Classic",
+      "Legal Drama"
+    ],
+    "publisher": "J.B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 2,
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://i.ibb.co/8j37fyY/5472.jpg",
+    "review": "A dystopian masterpiece that warns against totalitarianism. Set in a totalitarian society ruled by the oppressive Party led by Big Brother, the novel explores themes of surveillance, manipulation, and resistance. The protagonist, Winston Smith, rebels against the Party's control by engaging in acts of rebellion and seeking truth in a world of lies. Orwell's depiction of a dystopian future, where individuality is suppressed and truth is relative, remains eerily prescient in today's world. The book serves as a cautionary tale about the dangers of authoritarianism and the importance of preserving freedom and truth.",
+    "totalPages": 328,
+    "rating": 4.7,
+    "category": "Science Fiction",
+    "tags": [
+      "Dystopian",
+      "Political"
+    ],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  },
+  {
+    "bookId": 3,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.ibb.co/DChrYPR/4671.jpg",
+    "review": "A captivating story of love, wealth, and the American Dream. Set in the prosperous Jazz Age of the 1920s, The Great Gatsby follows the enigmatic Jay Gatsby as he pursues his elusive American Dream. Narrated by Nick Carraway, the novel explores themes of love, wealth, and the pursuit of happiness against the backdrop of the Roaring Twenties. Fitzgerald's lyrical prose and vivid imagery capture the glamour and decadence of the era while also delving into the darker aspects of the American Dream. Through Gatsby's obsession with the past and his unattainable love for Daisy Buchanan, the novel examines the fragility of dreams and the consequences of obsession.",
+    "totalPages": 180,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": [
+      "Romance",
+      "Jazz Age"
+    ],
+    "publisher": "Charles Scribner's Sons",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 4,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://i.ibb.co/Jp7LCcV/1885.jpg",
+    "review": "A delightful comedy of manners with memorable characters. Jane Austen's Pride and Prejudice is a witty and charming novel that explores the social dynamics of early 19th-century England. The story revolves around the spirited Elizabeth Bennet and the aloof Mr. Darcy as they navigate the pitfalls of love, marriage, and societal expectations. Austen's keen observations of human nature and her sharp wit shine through in this timeless tale of love and misunderstandings. Pride and Prejudice is not just a romance; it's a satire of the social norms and conventions of Austen's time. Through Elizabeth's journey of self-discovery and Mr. Darcy's transformation, the novel celebrates the power of love and the importance of overcoming prejudice.",
+    "totalPages": 279,
+    "rating": 4.6,
+    "category": "Classic Literature",
+    "tags": [
+      "Romance",
+      "Social Commentary"
+    ],
+    "publisher": "T. Egerton, Whitehall",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 5,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.ibb.co/v1QGZCk/39845219.jpg",
+    "review": "A coming-of-age novel with a rebellious protagonist. J.D. Salinger's The Catcher in the Rye follows the disillusioned teenager Holden Caulfield as he navigates the complexities of adolescence and adulthood in post-World War II America. The novel explores themes of alienation, identity, and the search for authenticity as Holden grapples with his feelings of isolation and disillusionment. Salinger's portrayal of teenage angst and rebellion resonates with readers of all generations, making The Catcher in the Rye a timeless classic of adolescent literature. Through Holden's cynical yet vulnerable voice, Salinger captures the essence of youth and the universal struggle to find one's place in the world.",
+    "totalPages": 224,
+    "rating": 4.2,
+    "category": "Fiction",
+    "tags": [
+      "Coming-of-Age",
+      "Teenage Angst"
+    ],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.ibb.co/C87V8Q4/5907.jpg",
+    "review": "An enchanting adventure set in Middle-earth. J.R.R. Tolkien's The Hobbit follows the journey of Bilbo Baggins, a hobbit who is swept into an epic quest to reclaim the lost kingdom of Erebor from the dragon Smaug. Along the way, Bilbo encounters a host of fantastical creatures, including trolls, elves, and goblins, as well as the enigmatic Gollum and the wise wizard Gandalf. Tolkien's richly imagined world of Middle-earth comes to life in this enchanting tale of courage, friendship, and heroism. The Hobbit is not just a children's story; it's a timeless classic that continues to captivate readers of all ages.",
+    "totalPages": 310,
+    "rating": 4.8,
+    "category": "Fantasy",
+    "tags": [
+      "Adventure",
+      "Middle-earth"
+    ],
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1937
+  },
+  {
+    "bookId": 7,
+    "bookName": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.ibb.co/Jmxf3KW/33.jpg",
+    "review": "An epic fantasy tale of good versus evil set in the magical world of Middle-earth. The Lord of the Rings follows the quest to destroy the One Ring, which holds the power to enslave all of Middle-earth. Frodo Baggins, accompanied by a fellowship of diverse companions, embarks on a perilous journey to Mount Doom, where the Ring can be destroyed. Along the way, they encounter treacherous landscapes, fierce battles, and the allure of power. Tolkien's masterful world-building and epic storytelling make The Lord of the Rings a timeless classic that continues to enchant readers with its themes of courage, sacrifice, and the triumph of good over evil.",
+    "totalPages": 1178,
+    "rating": 4.9,
+    "category": "Fantasy",
+    "tags": [
+      "Epic",
+      "Adventure"
+    ],
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1954
+  },
+  {
+    "bookId": 8,
+    "bookName": "The Chronicles of Narnia",
+    "author": "C.S. Lewis",
+    "image": "https://i.ibb.co/Mcb9rkd/11127.jpg",
+    "review": "A classic series of fantasy novels that transport readers to the magical land of Narnia. Written by C.S. Lewis, The Chronicles of Narnia follow the adventures of children who discover a secret world filled with talking animals, mythical creatures, and epic battles between good and evil. Through the magical wardrobe, the Pevensie siblings enter Narnia and embark on a series of quests that test their bravery, loyalty, and faith. Lewis's imaginative storytelling and rich symbolism make The Chronicles of Narnia a beloved classic that continues to inspire readers of all ages. From the enchanting land of Narnia to the mystical creatures that inhabit it, Lewis creates a world that is both captivating and profound.",
+    "totalPages": 1248,
+    "rating": 4.7,
+    "category": "Fantasy",
+    "tags": [
+      "Adventure",
+      "Christian Allegory"
+    ],
+    "publisher": "Geoffrey Bles",
+    "yearOfPublishing": 1950
+  },
+  {
+    "bookId": 9,
+    "bookName": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "image": "https://i.ibb.co/tLmxxZY/72193.jpg",
+    "review": "The first installment of the beloved Harry Potter series, introducing readers to the magical world of Hogwarts. In Harry Potter and the Philosopher's Stone, young Harry discovers that he is a wizard and enrolls in Hogwarts School of Witchcraft and Wizardry. Alongside his friends Ron and Hermione, Harry learns about magic, friendship, and the power of love as he unravels the mystery of the Philosopher's Stone. J.K. Rowling's enchanting tale captivates readers with its imaginative world-building, compelling characters, and thrilling adventures. From the moment Harry receives his letter from Hogwarts to his epic showdown with the dark wizard Voldemort, Harry Potter and the Philosopher's Stone is a spellbinding journey that leaves readers eagerly anticipating the next chapter in the series.",
+    "totalPages": 309,
+    "rating": 4.8,
+    "category": "Fantasy",
+    "tags": [
+      "Wizardry",
+      "Magic"
+    ],
+    "publisher": "Bloomsbury Publishing",
+    "yearOfPublishing": 1997
+  },
+  {
+    "bookId": 10,
+    "bookName": "Moby-Dick",
+    "author": "Herman Melville",
+    "image": "https://i.ibb.co.com/QpJzNTM/10.jpg",
+    "review": "A profound exploration of obsession and revenge. Moby-Dick follows Captain Ahab’s relentless pursuit of the titular white whale that had previously maimed him. Told through the eyes of Ishmael, a sailor on the Pequod, the novel delves into themes of fate, nature’s power, and humanity's struggle for meaning. Melville’s blend of adventure, symbolism, and philosophy makes it an enduring masterpiece.",
+    "totalPages": 635,
+    "rating": 4.2,
+    "category": "Classic Literature",
+    "tags": [
+      "Adventure",
+      "Philosophical"
+    ],
+    "publisher": "Harper & Brothers",
+    "yearOfPublishing": 1851
+  },
+  {
+    "bookId": 11,
+    "bookName": "The Catch-22",
+    "author": "Joseph Heller",
+    "image": "https://i.ibb.co.com/hyYw5mM/11.jpg",
+    "review": "A satirical novel that exposes the absurdity of war. Set during World War II, the story follows Captain John Yossarian, a U.S. bombardier, who is caught in a bureaucratic paradox where he must fly dangerous missions to be relieved, but requesting release would prove he is sane enough to continue. With its dark humor, Catch-22 coined a term that has become synonymous with no-win situations.",
+    "totalPages": 453,
+    "rating": 4.5,
+    "category": "Satire",
+    "tags": [
+      "War",
+      "Dark Humor"
+    ],
+    "publisher": "Simon & Schuster",
+    "yearOfPublishing": 1961
+  },
+  {
+    "bookId": 12,
+    "bookName": "Brave New World",
+    "author": "Aldous Huxley",
+    "image": "https://i.ibb.co.com/0n6FghX/12.jpg",
+    "review": "A dystopian novel that explores a future society driven by technology and consumerism. Brave New World imagines a world where individuality is sacrificed for the sake of social stability, and happiness is achieved through artificial means. Huxley’s thought-provoking work remains relevant today, warning against the dangers of conformity and the loss of personal freedom.",
+    "totalPages": 311,
+    "rating": 4.4,
+    "category": "Science Fiction",
+    "tags": [
+      "Dystopian",
+      "Social Commentary"
+    ],
+    "publisher": "Chatto & Windus",
+    "yearOfPublishing": 1932
+  },
+  {
+    "bookId": 13,
+    "bookName": "Frankenstein",
+    "author": "Mary Shelley",
+    "image": "https://i.ibb.co.com/B2gWLm0/13.jpg",
+    "review": "A groundbreaking science fiction novel about creation and responsibility. Frankenstein tells the story of Victor Frankenstein, a scientist who brings a creature to life but is horrified by his own creation. Shelley’s novel raises questions about ethics, ambition, and the consequences of playing God, making it a classic in both horror and philosophical literature.",
+    "totalPages": 280,
+    "rating": 4.3,
+    "category": "Horror",
+    "tags": [
+      "Science Fiction",
+      "Ethics"
+    ],
+    "publisher": "Lackington, Hughes, Harding, Mavor & Jones",
+    "yearOfPublishing": 1818
+  },
+  {
+    "bookId": 14,
+    "bookName": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "image": "https://i.ibb.co.com/R0nSdpP/14.jpg",
+    "review": "A psychological novel exploring guilt and redemption. Crime and Punishment follows the troubled student Raskolnikov as he justifies and commits a murder, only to grapple with his conscience. Dostoevsky masterfully delves into the complexities of human nature, morality, and the psychological impact of crime, making it a cornerstone of Russian literature.",
+    "totalPages": 671,
+    "rating": 4.7,
+    "category": "Psychological Fiction",
+    "tags": [
+      "Crime",
+      "Morality"
+    ],
+    "publisher": "The Russian Messenger",
+    "yearOfPublishing": 1866
+  },
+  {
+    "bookId": 15,
+    "bookName": "The Odyssey",
+    "author": "Homer",
+    "image": "https://i.ibb.co.com/zRVpGLT/15.jpg",
+    "review": "An epic poem recounting the adventures of Odysseus. The Odyssey follows the Greek hero's journey home after the Trojan War, facing mythical creatures, divine intervention, and personal trials. As one of the oldest literary works, Homer’s tale is a testament to the power of storytelling and explores themes of perseverance, loyalty, and homecoming.",
+    "totalPages": 541,
+    "rating": 4.6,
+    "category": "Epic",
+    "tags": [
+      "Mythology",
+      "Adventure"
+    ],
+    "publisher": "Ancient Greece",
+    "yearOfPublishing": "8th century BC"
+  },
+  {
+    "bookId": 16,
+    "bookName": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "image": "https://i.ibb.co.com/4MDdgMv/16.jpg",
+    "review": "A masterpiece of magical realism, following the Buendía family across generations. One Hundred Years of Solitude blends myth and reality to depict the rise and fall of the town of Macondo. Márquez’s poetic prose captures the surreal beauty of life, exploring themes of love, fate, and the cyclical nature of history.",
+    "totalPages": 417,
+    "rating": 4.7,
+    "category": "Magical Realism",
+    "tags": [
+      "Family Saga",
+      "Magical"
+    ],
+    "publisher": "Harper & Row",
+    "yearOfPublishing": 1967
+  },
+  {
+    "bookId": 17,
+    "bookName": "War and Peace",
+    "author": "Leo Tolstoy",
+    "image": "https://i.ibb.co.com/jfN7z2f/17.jpg",
+    "review": "An epic novel blending history, philosophy, and romance. War and Peace follows the lives of several families against the backdrop of Napoleon’s invasion of Russia. Tolstoy’s sweeping narrative captures the complexity of human emotions and the impact of history on personal lives, making it one of the greatest literary achievements of all time.",
+    "totalPages": 1225,
+    "rating": 4.8,
+    "category": "Historical Fiction",
+    "tags": [
+      "War",
+      "Philosophy"
+    ],
+    "publisher": "The Russian Messenger",
+    "yearOfPublishing": 1869
+  },
+  {
+    "bookId": 18,
+    "bookName": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "image": "https://i.ibb.co.com/tLhRKyw/18.jpg",
+    "review": "A gothic novel that explores vanity and morality. The Picture of Dorian Gray tells the story of a young man who remains youthful while a portrait of him ages, reflecting the consequences of his debauchery. Wilde’s sharp wit and philosophical insights make this novel a timeless examination of aestheticism and the duality of human nature.",
+    "totalPages": 254,
+    "rating": 4.4,
+    "category": "Gothic Fiction",
+    "tags": [
+      "Philosophy",
+      "Aestheticism"
+    ],
+    "publisher": "Ward, Lock & Co.",
+    "yearOfPublishing": 1890
+  }
+]
