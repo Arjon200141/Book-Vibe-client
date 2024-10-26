@@ -1,12 +1,13 @@
 import { FaShoppingCart } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
-import {AuthContext} from "../Providers/AuthProviders";
+import { AuthContext } from "../Providers/AuthProviders";
 import { useContext } from "react";
+import useCart from "../hooks/useCart";
 
 const Header = () => {
 
     const { user, logOut } = useContext(AuthContext);
-
+    const [cart] = useCart();
     const navlinkStyles = ({ isActive }) => {
         return {
             border: isActive ? "1px solid #23BE0A" : "1px solid white",
@@ -29,13 +30,18 @@ const Header = () => {
             <li><NavLink to="/" style={navlinkStyles}>Home</NavLink></li>
             <li><NavLink to="/booklist" style={navlinkStyles}>All Books</NavLink></li>
             <li><NavLink to="/upcoming" style={navlinkStyles}>Upcoming</NavLink></li>
-            <li><NavLink to="/wishlist" style={navlinkStyles}>Wishlist</NavLink></li>
+            {
+                user && <li><NavLink to="/wishlist" style={navlinkStyles}>Wishlist</NavLink></li>
+            }
             <li><NavLink to="/about" style={navlinkStyles}>About</NavLink></li>
-            <li><Link to="/cart">
-                <a><button className="relative mr-2">
-                    <FaShoppingCart className="h-6 w-6" />
-                    <div className="badge  h-3 w-3 absolute top-4 left-4 ">0</div>
-                </button></a></Link></li>
+            {
+                user && <li><Link to="/cart">
+                    <a><button className="relative mr-2">
+                        <FaShoppingCart className="h-6 w-6" />
+                        <div className="badge  h-3 w-3 absolute top-4 left-4 ">{cart.length}</div>
+                    </button></a></Link>
+                </li>
+            }
         </>
     );
 

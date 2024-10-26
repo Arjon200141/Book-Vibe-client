@@ -16,6 +16,8 @@ import BookList from './Components/BookList/BookList';
 import SignIn from './Components/SignIn/SignIn';
 import AuthProviders from './Components/Providers/AuthProviders';
 import LogIn from './Components/SignIn/LogIn';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Cart from './Components/Cart/Cart';
 
 const router = createBrowserRouter([
   {
@@ -56,15 +58,22 @@ const router = createBrowserRouter([
       {
         path: "/signin",
         element: <LogIn></LogIn>
-      }
+      },
+      {
+        path:"/cart",
+        element:<Cart></Cart>
+      },
     ]
   },
 ]);
+const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProviders>
+    <QueryClientProvider client={queryClient}>
       <RouterProvider router={router} />
+      </QueryClientProvider>
     </AuthProviders>
   </React.StrictMode>,
 )
