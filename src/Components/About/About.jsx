@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div className="space-y-3 mx-12 border-2 border-solid p-6 rounded-xl mt-10">
+        <div className="space-y-3 mx-12 border-2 border-solid p-6 rounded-xl my-10">
             <h2 className="text-2xl font-semibold">About Book Vibe</h2>
             <p>Welcome to Book Vibe, your go-to destination for discovering your next favorite book! At Book Vibe, we believe in the transformative power of reading and aim to provide readers with an immersive experience to explore, discover, and connect with books that resonate with them.</p>
             <hr />

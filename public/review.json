@@ -1,0 +1,38 @@
+[
+    {
+        "reviewer_name": "Alice Johnson",
+        "review_details": "An engaging platform with a great variety of books. Easy to navigate, and the recommendations are spot on!",
+        "rating": 5,
+        "image": "https://i.ibb.co/dQpkt5j/serious-readhead-bearded-man-white-tshirt-holding-folder-pen-171337-7855.jpg"
+    },
+    {
+        "reviewer_name": "Michael Lee",
+        "review_details": "I love the collection, but the site is sometimes slow. Still, it's my go-to for finding new books.",
+        "rating": 4,
+        "image": "https://i.ibb.co/B2Mq1pc/handsome-mature-businessman-looking-confident-smiling-176420-31691.jpg"
+    },
+    {
+        "reviewer_name": "Sofia Martinez",
+        "review_details": "Great customer service! I had an issue with my order, and it was resolved quickly. Highly recommend!",
+        "rating": 5,
+        "image": "https://i.ibb.co/VjzH52c/beautiful-casual-woman-using-laptop-109710-1071.jpg"
+    },
+    {
+        "reviewer_name": "David Wilson",
+        "review_details": "The book previews are a nice touch, but I wish they offered more discounts.",
+        "rating": 3,
+        "image": "https://i.ibb.co/3pMP8mf/thoughtful-businessman-sitting-office-desk-writing-trying-think-up-idea-squinting-as-pondering-new-c.jpg"
+    },
+    {
+        "reviewer_name": "Emily Brown",
+        "review_details": "A wonderful platform for book lovers. I've found many gems through their personalized suggestions.",
+        "rating": 5,
+        "image": "https://i.ibb.co/8s15CCs/handsome-young-businessman-working-office-1301-3916.jpg"
+    },
+    {
+        "reviewer_name": "Chris Evans",
+        "review_details": "Good experience overall, but the checkout process could be smoother.",
+        "rating": 4,
+        "image": "https://i.ibb.co/BNmmQB1/portrait-young-man-while-studying-books-641386-449.jpg"
+    }
+]

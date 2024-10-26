@@ -1,6 +1,12 @@
+import { FaShoppingCart } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
+import {AuthContext} from "../Providers/AuthProviders";
+import { useContext } from "react";
 
 const Header = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
     const navlinkStyles = ({ isActive }) => {
         return {
             border: isActive ? "1px solid #23BE0A" : "1px solid white",
@@ -10,13 +16,26 @@ const Header = () => {
         };
     };
 
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => {
+                console.error(error.message);
+            });
+    };
+
     const link = (
         <>
             <li><NavLink to="/" style={navlinkStyles}>Home</NavLink></li>
+            <li><NavLink to="/booklist" style={navlinkStyles}>All Books</NavLink></li>
             <li><NavLink to="/upcoming" style={navlinkStyles}>Upcoming</NavLink></li>
-            <li><NavLink to="/listedbooks" style={navlinkStyles}>Listed Books</NavLink></li>
-            <li><NavLink to="/read" style={navlinkStyles}>Pages to Read</NavLink></li>
+            <li><NavLink to="/wishlist" style={navlinkStyles}>Wishlist</NavLink></li>
             <li><NavLink to="/about" style={navlinkStyles}>About</NavLink></li>
+            <li><Link to="/cart">
+                <a><button className="relative mr-2">
+                    <FaShoppingCart className="h-6 w-6" />
+                    <div className="badge  h-3 w-3 absolute top-4 left-4 ">0</div>
+                </button></a></Link></li>
         </>
     );
 
@@ -32,7 +51,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <Link to="/">
-                <a className=" text-2xl font-bold"><img src="https://i.ibb.co.com/fpW5Ywc/201189010.png" alt="" className="h-14 w-32 rounded-lg" /></a>
+                    <a className=" text-2xl font-bold"><img src="https://i.ibb.co.com/fpW5Ywc/201189010.png" alt="" className="h-14 w-32 rounded-lg" /></a>
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -41,8 +60,24 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-4">
-                <a className="btn bg-[#23BE0A] text-white font-semibold text-xl px-6">Sign In</a>
-                <a className="btn bg-[#59C6D2] text-white font-semibold text-xl px-6">Sign Up</a>
+                {
+                    user ?
+                        (
+                            <div className="flex gap-4 items-center">
+                                <p>{user.displayName}</p>
+                                <button onClick={handleLogOut} className="btn px-6 text-2xl py-1 bg-lime-200 font-semibold">Log Out</button>
+                            </div>
+                        ) :
+                        <div className="flex gap-6">
+                            <Link to="/signup">
+                                <a className="btn bg-[#23BE0A] text-white font-semibold text-xl px-6">Sign Up</a>
+                            </Link>
+                            <Link to="/signin">
+                                <a className="btn bg-[#59C6D2] text-white font-semibold text-xl px-6">Sign In</a>
+                            </Link>
+                        </div>
+                }
+
             </div>
         </div>
     );
