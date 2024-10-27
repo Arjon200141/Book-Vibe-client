@@ -6,7 +6,7 @@ const Root = () => {
     const location = useLocation();
     const noheaderFooter = location.pathname.includes('signin') || location.pathname.includes('signup');
     return (
-        <div className="bg-cyan-100">
+        <div className="bg-cyan-100 playfair">
             {noheaderFooter || <Header></Header>}
             <Outlet></Outlet>
             {noheaderFooter || <Footer></Footer>}

@@ -1,13 +1,15 @@
-import { FaShoppingCart } from "react-icons/fa";
+import { FaPowerOff, FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProviders";
 import { useContext } from "react";
 import useCart from "../hooks/useCart";
+import useAdmin from "../hooks/useAdmin";
 
 const Header = () => {
 
     const { user, logOut } = useContext(AuthContext);
     const [cart] = useCart();
+    const [isAdmin] = useAdmin();
     const navlinkStyles = ({ isActive }) => {
         return {
             border: isActive ? "1px solid #23BE0A" : "1px solid white",
@@ -29,19 +31,21 @@ const Header = () => {
         <>
             <li><NavLink to="/" style={navlinkStyles}>Home</NavLink></li>
             <li><NavLink to="/booklist" style={navlinkStyles}>All Books</NavLink></li>
-            <li><NavLink to="/upcoming" style={navlinkStyles}>Upcoming</NavLink></li>
-            {
-                user && <li><NavLink to="/wishlist" style={navlinkStyles}>Wishlist</NavLink></li>
-            }
-            <li><NavLink to="/about" style={navlinkStyles}>About</NavLink></li>
-            {
-                user && <li><Link to="/cart">
-                    <a><button className="relative mr-2">
-                        <FaShoppingCart className="h-6 w-6" />
-                        <div className="badge  h-3 w-3 absolute top-4 left-4 ">{cart.length}</div>
-                    </button></a></Link>
-                </li>
-            }
+            {user && isAdmin && <li><NavLink to="/upcoming" style={navlinkStyles}>Upcoming</NavLink></li>}
+            {!user && <li><NavLink to="/about" style={navlinkStyles}>About</NavLink></li>}
+            <div className="flex gap-2 items-center ml-4">
+                {
+                    user && <button><NavLink to="/wishlist" className="text-xl "><FaRegHeart /></NavLink></button>
+                }
+                {
+                    user && <li><Link to="/cart">
+                        <a><button className="relative mr-2">
+                            <FaShoppingCart className="h-6 w-6" />
+                            <div className="badge h-3 w-3 absolute top-4 left-4 ">{cart.length}</div>
+                        </button></a></Link>
+                    </li>
+                }
+            </div>
         </>
     );
 
@@ -69,9 +73,9 @@ const Header = () => {
                 {
                     user ?
                         (
-                            <div className="flex gap-4 items-center">
+                            <div className="flex flex-col-reverse items-center">
                                 <p>{user.displayName}</p>
-                                <button onClick={handleLogOut} className="btn px-6 text-2xl py-1 bg-lime-200 font-semibold">Log Out</button>
+                                <button onClick={handleLogOut} className=" px-6 text-xl py-1 font-semibold"><FaPowerOff /></button>
                             </div>
                         ) :
                         <div className="flex gap-6">

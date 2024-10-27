@@ -18,6 +18,8 @@ import AuthProviders from './Components/Providers/AuthProviders';
 import LogIn from './Components/SignIn/LogIn';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Cart from './Components/Cart/Cart';
+import PrivateRoutes from './Components/PrivateRoutes/PrivateRoutes';
+import AdminRoutes from './Components/AdminRoutes/AdminRoutes';
 
 const router = createBrowserRouter([
   {
@@ -48,7 +50,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/books/:bookId",
-        element: <BookReview></BookReview>,
+        element: <PrivateRoutes><BookReview></BookReview></PrivateRoutes>,
         loader: () => fetch('http://localhost:5000/books')
       },
       {
