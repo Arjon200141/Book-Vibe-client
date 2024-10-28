@@ -20,6 +20,11 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Cart from './Components/Cart/Cart';
 import PrivateRoutes from './Components/PrivateRoutes/PrivateRoutes';
 import AdminRoutes from './Components/AdminRoutes/AdminRoutes';
+import Manage from './Components/Manage/Manage';
+
+import Payments from './Components/Payments/Payments';
+import MyPayments from './Components/Payments/MyPayments';
+import UpdateBook from './Components/Manage/UpdateBook';
 
 const router = createBrowserRouter([
   {
@@ -65,6 +70,24 @@ const router = createBrowserRouter([
         path:"/cart",
         element:<Cart></Cart>
       },
+      {
+        path:"/manage",
+        element:<AdminRoutes><Manage></Manage></AdminRoutes>,
+        loader: () => fetch('http://localhost:5000/books')
+      },
+      {
+        path:"/payments",
+        element:<Payments></Payments>
+      },
+      {
+        path:"/mypayments",
+        element:<MyPayments></MyPayments>
+      },
+      {
+        path:"/updatebooks/:id",
+        element:<AdminRoutes><UpdateBook></UpdateBook></AdminRoutes>,
+        loader:({params})=> fetch(`http://localhost:5000/books/${params.id}`)
+      }
     ]
   },
 ]);

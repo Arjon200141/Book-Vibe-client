@@ -6,7 +6,6 @@ import useCart from "../hooks/useCart";
 import useAdmin from "../hooks/useAdmin";
 
 const Header = () => {
-
     const { user, logOut } = useContext(AuthContext);
     const [cart] = useCart();
     const [isAdmin] = useAdmin();
@@ -18,7 +17,6 @@ const Header = () => {
             fontWeight: isActive ? "bold" : "normal"
         };
     };
-
     const handleLogOut = () => {
         logOut()
             .then(() => { })
@@ -31,8 +29,12 @@ const Header = () => {
         <>
             <li><NavLink to="/" style={navlinkStyles}>Home</NavLink></li>
             <li><NavLink to="/booklist" style={navlinkStyles}>All Books</NavLink></li>
-            {user && isAdmin && <li><NavLink to="/upcoming" style={navlinkStyles}>Upcoming</NavLink></li>}
+            <li><NavLink to="/upcoming" style={navlinkStyles}>Upcoming</NavLink></li>
             {!user && <li><NavLink to="/about" style={navlinkStyles}>About</NavLink></li>}
+            <li><NavLink to="/mypayments" style={navlinkStyles}>My Payments</NavLink></li>
+            <li><NavLink to="/payments" style={navlinkStyles}>Payments</NavLink></li>
+            {user && isAdmin && <li><NavLink to="/manage" style={navlinkStyles}>Manage Books</NavLink></li>}
+
             <div className="flex gap-2 items-center ml-4">
                 {
                     user && <button><NavLink to="/wishlist" className="text-xl "><FaRegHeart /></NavLink></button>
@@ -50,7 +52,8 @@ const Header = () => {
     );
 
     return (
-        <div className="navbar bg-cyan-200">
+        <div className="">
+            <div className="navbar px-4 bg-cyan-200">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -74,7 +77,7 @@ const Header = () => {
                     user ?
                         (
                             <div className="flex flex-col-reverse items-center">
-                                <p>{user.displayName}</p>
+                                <p>{user.displayName.split(' ')[0]}</p>
                                 <button onClick={handleLogOut} className=" px-6 text-xl py-1 font-semibold"><FaPowerOff /></button>
                             </div>
                         ) :
@@ -89,6 +92,7 @@ const Header = () => {
                 }
 
             </div>
+        </div>
         </div>
     );
 };

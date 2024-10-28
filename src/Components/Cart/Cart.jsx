@@ -3,12 +3,40 @@ import useAxiosSecure from "../hooks/axiossecure";
 import useCart from "../hooks/useCart";
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProviders";
+import Swal from "sweetalert2";
 
 const Cart = () => {
     const [cart, refetch] = useCart();
     const totalPrice = cart.reduce((total, item) => total + item.price, 0);
     const axiosSecure = useAxiosSecure();
     const { user } = useContext(AuthContext);
+
+    const handleDelete = id => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                axiosSecure.delete(`/carts/${id}`)
+                    .then(res => {
+                        if (res.data.deletedCount > 0) {
+                            refetch();
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your product has been deleted.",
+                                icon: "success"
+                            });
+                        }
+                    })
+            }
+        });
+    }
+
     return (
         <div className="mx-20">
             <h2 className="text-5xl font-semibold text-center my-8">My Shopping Cart</h2>
@@ -23,7 +51,7 @@ const Cart = () => {
                                     <h2><span className="font-semibold">Author Name : </span>{cartitem.author}</h2>
                                     <p><span className="font-semibold">Category : </span>{cartitem.category}</p>
                                     <p><span className="font-semibold">Price :</span> {cartitem.price} $ </p>
-                                    <button className="btn px-4 py-0 ml-0 font-semibold text-lg rounded-xl bg-red-100 flex items-center gap-2">Remove from Cart <MdOutlineDelete /></button>
+                                    <button onClick={() => handleDelete(cartitem._id)} className="btn px-4 py-0 ml-0 font-semibold text-lg rounded-xl bg-red-100 flex items-center gap-2">Remove from Cart <MdOutlineDelete /></button>
                                 </div>
                                 <div className="">
                                     <img src={cartitem.image} alt="" className="h-40" />
